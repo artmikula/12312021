@@ -1,13 +1,244 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  min-width: 1000px;
+  height: 60px;
+  background-color: #dab8e8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  margin: 1em;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+.mainCont {
+  height: 50vh;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login,
+.signup {
+  min-height: 340px;
+  width: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+#loginform,
+#signupform {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 400px;
+  min-height: 200px;
+}
+
+#username,
+#password,
+#rePassword {
+  border: none;
+  height: 35px;
+  outline: 1px solid rgb(211, 211, 211);
+  width: 100%;
+  border-radius: 5px;
+}
+
+.button2 {
+  margin: 5px;
+  border: none;
+  padding: 5px;
+  min-width: 125px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9em;
+  border-radius: 5px;
+  background-color: #909df9;
+  height: 35px;
+  margin: 20px;
+}
+
+.button2:hover {
+  background-color: #5367ff;
+}
+
+.error h2 {
+  color: red;
+}
+.error {
+  color: red;
+  text-align: center;
+}
+
+.buttons {
+  width: 100%;
+}
+
+#topRight {
+  display: flex;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+#user_icon {
+  width: 45px;
+  height: 45px;
+}
+
+@media screen and (max-width: 1000px) {
+  .charts {
+    flex-direction: column;
+  }
+}
+
+.labelDiv {
+  margin: 15px 0 15px 0;
+}
+
+#homeContainer {
+  width: 1000px;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+}
+
+#sidebar {
+  height: 50%;
+  width: 25%;
+}
+
+#dataMain {
+  height: 100%;
+  width: 75%;
+  display: flex;
+}
+
+.table1 {
+  border: 1px solid #c0c0c0;
+  border-collapse: collapse;
+  padding: 5px;
+}
+.table1 th {
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+  background: #eaeaea;
+}
+.table1 td {
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.dataTable {
+  width: 50%;
+  display: block;
+}
+
+.dataTableTop,
+.dataTableBottom {
+  display: flex;
+  margin: 30px;
+  justify-content: space-around;
+}
+
+.infoBox {
+  height: 150px;
+  width: 150px;
+  outline: 1px solid rgb(211, 211, 211);
+  border-radius: 5px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  background-color: #a7a7a7;
+  border-radius: 50%;
+  margin: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#user_icon {
+  width: 45px;
+  height: 45px;
+}
+
+#userDiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button4 {
+  width: 220px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  color: #000;
+  font-size: 1em;
+  margin: 15px;
+}
+
+.button4:hover {
+  background-color: #9b59b6;
+  color: #fff;
+}
+
+.seasonSelect {
+  display: flex;
+  flex-direction: column;
+  margin: 18px;
 }
